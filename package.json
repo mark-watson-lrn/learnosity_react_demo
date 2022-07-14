@@ -12,9 +12,9 @@
     "build": "cd client && npm run build"
   },
   "keywords": [
-    "quiz",
-    "questionairre",
-    "learnosity quiz",
+    "learnosity NodeJS SDK React",
+    "react app",
+    "learnosity",
     "learnosity api" 
   ],
   "devDependencies": {

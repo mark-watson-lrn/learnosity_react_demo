@@ -1,0 +1,96 @@
+.app {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.a-message-for-you {
+  height: 5vh;
+  background-color: white;
+}
+
+.a-message-for-you:hover {
+  background-color: rgb(150, 200, 130);
+  transform: scale(1.2) translateY(-50%);
+}
+
+.the-message{
+  margin: 0 auto;
+  transform: translateY(33%);
+}
+
+.app-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.app-name {
+  height: 10vmin;
+}
+
+.app-header {
+  background-color: #282c34;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link:link {
+  text-decoration: none;
+}
+
+.app-link:hover{
+  cursor: pointer;
+}
+
+.react-logo-container{
+  position:absolute;
+  transform: translateX(40%) translateY(90%);
+}
+
+.react-logo{
+  transform: translateY(30%);
+}
+
+.results-container{
+    width: 80vw;
+    margin: auto;
+}
+
+.btn-try-again{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    min-width: 150px;
+    margin-top: 11px;
+    background-color: #1877b1;
+    color: #fff;
+    border: 1px solid #1877b1;
+    font-size: 1.25em;
+    padding: 0.4em 0.9em;
+    cursor: pointer;
+}
+
+.btn-try-again:hover{
+    background-color: #0e4161;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 15s linear alternate;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: scale(0.25,0.25);;
+  }
+  to {
+    transform: scale(1.5,1.5);;
+  }
+}

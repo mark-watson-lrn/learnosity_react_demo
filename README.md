@@ -1,13 +1,10 @@
 
 ![Mark Watson](./assets/LearnosityLogo_cropped.png)  
 
-![Mark Watson](./assets/protein_molecule.png)  
+[![github](./assets/myGithub.png)](https://github.com/mark-watson-lrn/bootcamp_react_demo)  [![github](./assets/myWebpage.png)](https://learnosity-react.herokuapp.com)  
 
-[![webpage](./assets/myWebpage.png)](https://proteins-lrn.herokuapp.com)  [![github](./assets/myGithub.png)](https://github.com/mark-watson-lrn/bootcamp_demo)  
-
- 
-# Bootcamp Demo Quiz  
-## Author API and Reports API
+# React Framework with Learnosity's NodeJS SDK  
+## Items API and Reports API  
 
 ### Table of Contents  
   
@@ -29,27 +26,27 @@
 
 **What is this project?**  
 
-* An exploration into Learnosity's products from the client / customer viewpoint.
+* Demonstrates one way of priming the Learnosity Assessment and Reporting modules using the Learnosity's Node-JS SDK
 
 **Why this project?**  
 
-* It was decided to pick a topic where we could sample the different Item Editing features so we randomly chose the topic of Proteins.
+* To provide our Client's with an example of how to use React with our products.
 
 ---
 
 ### 2. User Story  
 
 * AS a Learnosity customer.  
-* I WANT to be able to easily implement Learnosity's products into my web application.  
-* SO THAT I can set tests as specified by my clients.  
+* I WANT to be able to easily implement Learnosity's products into my web application using React framework.  
+* SO THAT I can create online assessments.  
 
 ### 3. Acceptance Criteria
 
 * GIVEN a landing page.
 * WHEN I select 'Start'.
-* THEN a quiz on proteins is rendered to my page.
-* WHEN I complete the quiz I can save and exit from the quiz.
-* AND I am presented with the result of my quiz.
+* THEN an assessment is rendered to my page.
+* WHEN I complete the assessmnet, I can save and exit from the assessment.
+* AND I am presented with the results of my assessment.
 
 ---
 
@@ -63,7 +60,7 @@ Once downloaded, you will need to install the dependencies with the following co
 
 You will then need to add your API keys into a .env file.  I've left a template in the repository for you to follow.
 
-Once you have created a .env file with your API keys you can run the application, type in the command line:
+Once you have created a .env file with your API keys, you can run the application by typing in the command line:
 
 ```npm start develop```  
 
@@ -109,9 +106,9 @@ You are welcome to modify the code as you need as allowed by the [license](#7-li
 
 ---
 
-### 10. Tests  
+### 10. Unit Tests  
 
-* No tests have been prepared for this application.  
+* No unit tests have been prepared for this application.  
 
 ---
 
@@ -120,17 +117,12 @@ You are welcome to modify the code as you need as allowed by the [license](#7-li
  All actions not checked are still to be completed:  
 
 [x]  This application satisfies the [acceptance criteria](#3-acceptance-criteria).  
-[x]  Application is deployed to Heroku [proteins-lrn.herokuapp.com](https://proteins-lrn.herokuapp.com).  
 [x]  Application loads with no errors.  
 [x]  User experience is intuitive and easy to navigate.  
 [x]  User interface style is clean and polished.  
-[x]  GitHub repository contains application code.
-[x]  Application is deployed to GitHub Pages: [Github location: https://github.com/mark-watson-lrn/bootcamp_demo](https://github.com/mark-watson-lrn/bootcamp_demo)  
+[x]  GitHub repository contains application code.  
 [x]  Repository has a unique name.  
-[x]  Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.  
-[x]  Repository contains multiple descriptive commit messages.  
-[x]  Repository contains quality README file with description, screenshot, and link to deployed application: [Github location: https://github.com/mark-watson-lrn/bootcamp_demo](https://github.com/mark-watson-lrn/bootcamp_demo).  
 
 ---
 
-[Back to the top](#bootcamp-demo-quiz)  
+[Back to the top](#react-framework-with-learnositys-nodejs-sdk)

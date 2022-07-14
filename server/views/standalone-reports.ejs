@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learnosity Bootcamp - Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="heading"><h1>Protein Quiz Results</h1></div>
+
+    <div id="report-container">
+      <div id="learnosity_report"></div>
+    </div>
+    <script src="https://reports.learnosity.com/?v2022.1.LTS"></script>
+    <script>
+
+            const request = <%- JSON.stringify(request) %>;        
+            const callbacks = {
+                errorListener: function (e) {
+                    
+                  // Adds a listener to all error codes.
+                    console.log("Error Code ", e.code);
+                    console.log("Error Message ", e.msg);
+                    console.log("Error Detail ", e.detail);
+                },
+                readyListener: function () {
+                    console.log("Learnosity Reports API is ready");
+                }
+            };
+
+            const reportsApp = LearnosityReports.init(request, callbacks);
+    </script>
+  </body>
+</html>

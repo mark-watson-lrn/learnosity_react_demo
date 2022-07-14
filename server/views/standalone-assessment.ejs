@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learnosity Bootcamp - Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="heading"><h1>Protein Quiz</h1></div>
+
+    <div id="quiz-container">
+      <div id="learnosity_assess"></div>
+    </div>
+
+    <script src="//items.learnosity.com/?v2021.2.LTS"></script>
+    <script>
+      const request = <%- JSON.stringify(request) %>;
+
+      const itemsApp = LearnosityItems.init(request, {
+          readyListener() {
+              console.log('ready');
+          },
+          errorListener(err) {
+              console.log('error', err);
+          }
+      })
+    </script>
+  </body>
+</html>
