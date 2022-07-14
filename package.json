@@ -1,0 +1,23 @@
+{
+  "name": "learnosity-bootcamp",
+  "version": "1.0.0",
+  "author": "Mark Watson",
+  "license": "MIT",
+  "description": "An exploration into the application of Learnosity's different API's.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "quiz",
+    "questionairre",
+    "learnosity quiz",
+    "learnosity api" 
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
