@@ -1,18 +1,38 @@
 .app {
   position: relative;
   text-align: center;
+  background-color: #282c34;
   height: 100vh;
   width: 100vw;
 }
 
-.a-message-for-you {
-  height: 5vh;
-  background-color: white;
+.message-container {
+  position: absolute;
+  bottom: 3rem;
+  left: 15%;
+  width: 70vw;
+  height: 3rem;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border: 0.4rem solid;
+  border-image: linear-gradient(45deg, gold, deeppink) 1;
+  clip-path: inset(0px round 0.5rem);
+  animation: huerotate 6s infinite linear;
+  filter: hue-rotate(360deg);
 }
 
-.a-message-for-you:hover {
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rorate(360deg);
+    }
+}
+
+.message-container:hover {
   background-color: rgb(150, 200, 130);
-  transform: scale(1.2) translateY(-50%);
+  transform: scale(120%)
 }
 
 .the-message{
@@ -92,5 +112,16 @@
   }
   to {
     transform: scale(1.5,1.5);;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .message-container{
+      left: 8%;
+      width: 80vw;
+  }
+
+  .the-message {
+    font-size: small;
   }
 }

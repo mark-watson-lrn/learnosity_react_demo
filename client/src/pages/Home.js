@@ -67,8 +67,10 @@ const Home = () => {
             href="/assess" 
             rel="noopener noreferrer"
           >
-            <div className="a-message-for-you">
-              <p className="the-message"> {homeMessage} </p>
+            <div className="message-container">
+              <div className="a-message-for-you">
+                <p className="the-message"> {homeMessage} </p>
+              </div>
             </div>
           </a>
         </div>
