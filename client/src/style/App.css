@@ -119,9 +119,11 @@
   .message-container{
       left: 8%;
       width: 80vw;
+      bottom: 4rem;
   }
 
   .the-message {
     font-size: small;
+    transform: translateY(55%);
   }
 }
