@@ -11,7 +11,7 @@ export const QuizListener = (authentication) => {
 
             learnosityObj = LearnosityItems.init(authentication, {
                 readyListener() {
-                    console.log('👍🏼 <<< Learnosity Assess API is ready >>> 🧘🏼');
+                    console.log('👍🏼 <<< Learnosity Items API is ready >>> 🧘🏼');
                 },
                 errorListener(err) {
                     console.log('error', err);

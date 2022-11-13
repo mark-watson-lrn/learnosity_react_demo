@@ -75,7 +75,8 @@ const assessRoute = () => {
         config: {
           configuration: {
             'onsubmit_redirect_url': user_logged_in,
-            'lazyload':true
+            'lazyload':true,
+            'question_indexing': true
           }
       }
     });

@@ -1,5 +1,5 @@
 
-module.exports = { 
-        domain: 'heroku',
-        name: 'learnosity-react.herokuapp.com'
+module.exports = {
+        domain: 'netlify',
+        name: 'learnosity-react.netlify.app'
     }
